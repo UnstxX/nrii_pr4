@@ -1,7 +1,7 @@
 import pytest
 from app import app
 
-@pytest_fixture
+@pytest.fixture
 def client():
     with app.test_client() as client:
         yield client
